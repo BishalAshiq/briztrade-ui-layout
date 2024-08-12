@@ -1,12 +1,21 @@
 "use client"
-import React from 'react';
+import React, { useState } from 'react';
 import addNav from "../../assests/nav.png"
+import compLogo from "../../assests/companylogo.png"
 import Image from 'next/image';
 import style from "./Navbar.module.css"
+// import "bootstrap/dist/css/bootstrap.min.css";
+
 
 const Navbar = () => {
 
+    // State to track which tab is active
+    const [activeTab, setActiveTab] = useState('tab1');
 
+    // Handler to change the active tab
+    const handleTabClick = (tabId) => {
+        setActiveTab(tabId);
+    };
 
     return (
         <div>
@@ -59,7 +68,7 @@ const Navbar = () => {
                     <div className="dropdown">
                         <p className='dropdownNavP' href='/' type="button">
                             Sign In
-                        </p> 
+                        </p>
                     </div>
 
                     <div className="dropdown">
@@ -83,6 +92,120 @@ const Navbar = () => {
                         <span className='dropdownNavP' href='/' >
                             Account
                         </span>
+                    </div>
+                </div>
+            </div>
+
+            <div className='container'>
+                <div>
+                    <div className='row'>
+                        <div className='col-xl-2 col-lg-2 col-md-2 col-sm-6 col-12'>
+                          <div className={style.navDivsecondimg}>
+                          <Image className={style.navlogoimg} src={compLogo} height={""} width={""} alt='' />
+                          </div>
+                        </div>
+
+
+                        <div className='col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6'>
+
+                            <div>
+                                {/* Tab Navigation */}
+                                <div className="tabs">
+                                    <p
+                                        className={`tab-button ${activeTab === 'tab1' ? 'active' : ''}`}
+                                        onClick={() => handleTabClick('tab1')}
+                                    >
+                                        Products
+                                    </p>
+                                    <p
+                                        className={`tab-button ${activeTab === 'tab2' ? 'active' : ''}`}
+                                        onClick={() => handleTabClick('tab2')}
+                                    >
+                                        Category
+                                    </p>
+                                    <p
+                                        className={`tab-button ${activeTab === 'tab3' ? 'active' : ''}`}
+                                        onClick={() => handleTabClick('tab3')}
+                                    >
+                                        Events
+                                    </p>
+                                </div>
+
+                                <div className="tab-content">
+                                    {activeTab === 'tab1' &&
+                                        <div className={style.navSearchdiv}>
+                                            <div className={style.searchInputDiv}>
+                                                <input className={style.searchInput} type='search' placeholder='Search for product category or service' />
+                                                <button className={style.searchInputbtn}>Search</button>
+                                            </div>
+
+                                            <div className={style.navSearchText}>
+                                                <span>shoe</span>
+                                                <span>toys</span>
+                                                <span>Fish</span>
+                                                <span>wooden furniture</span>
+                                                <span>plastic</span>
+                                            </div>
+                                        </div>}
+
+
+
+                                    {activeTab === 'tab2' && <div>Content for Tab 2</div>}
+                                    {activeTab === 'tab3' && <div>Content for Tab 3</div>}
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div className='col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6'>
+                            <div className={style.navRightsidediv}>
+                                <div className="dropdown">
+                                    <p className='dropdown-toggle dropdownNavSecP' href='/' type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Buyer
+                                    </p>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                                <div className="dropdown">
+                                    <p className='dropdown-toggle dropdownNavSecP' href='/' type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Seller
+                                    </p>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                                <div className="dropdown">
+                                    <p className='dropdown-toggle dropdownNavSecP' href='/' type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Advisory
+                                    </p>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                                <div className="dropdown">
+                                    <p className='dropdown-toggle dropdownNavSecP' href='/' type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Events
+                                    </p>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
