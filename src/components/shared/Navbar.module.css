@@ -41,7 +41,6 @@ top: 184px;
 left: 105.09px;
 gap: 0px;
 opacity: 0px;
-angle: 0.09 deg;
 
 }
 .searchInputDiv{
@@ -78,6 +77,10 @@ angle: 0.09 deg;
     line-height: 15px;
     color: rgba(47, 46, 65, 1);
     cursor: pointer;
+}
+.thirddivfull{
+    background-color: white;
+    padding: 20px;
 }
 
 .navSearchdiv{

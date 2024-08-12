@@ -1,12 +1,90 @@
-.topCategorydiv{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.bannerfulldiv{
+    margin: 10px 0 0 0;
+}
+.topCategoryfulldiv{
+    /* margin: 10px 0 0 0; */
     background-color: white;
-    border: 1px solid gray;
+    padding: 10px 10px 10px 30px;
+    border-radius: 4px;
+}
+.topCategorydiv{
+    /* background-color: white; */
+    /* border: 1px solid gray; */
+    
 }
 .topCategories{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     text-align: center;
     gap: 10px;
-    margin: 10px 0;
+    margin: 20px 0;
 }
+
+.topCategoryTag{
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    /* font-style: normal; */
+}
+.topCatetext{
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+/* Wrapper for the image and content */
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Image styling */
+  .imageWrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Text and button container */
+  .textOverlay {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    padding: 20px;
+   
+  }
+  
+  /* Button styling */
+  .textOverlay button {
+    margin-top: 10px;
+    padding: 4px 20px;
+    background-color: #0070f3; /* Customize the button color */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+  }
+  
+  .textOverlay h2 {
+    margin: 0;
+    font-size: 24px; /* Adjust the font size as needed */
+    /* font-size: 14px; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    width: 250px;
+    font-style: italic;
+    color: orange;
+  
+  }
+  .textOverlayh2{
+    text-shadow: whitesmoke;
+  }
+  
