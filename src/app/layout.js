@@ -3,7 +3,8 @@ import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Script from "next/script"; // Import the Script component
-
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {

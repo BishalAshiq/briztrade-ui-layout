@@ -124,7 +124,8 @@ const Banner = () => {
 
 
                 <div className='col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12'>
-                    <div className='row no-gutter'>
+                   <div className={style.bannerFirstfulldiv}>
+                   <div className='row'>
                         <div className='col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12'>
                             <div className={style.imageWrapper}>
                                 <Image className={style.bannerimage} src={bannerphoto} height={""} width={""} alt='' />
@@ -138,7 +139,7 @@ const Banner = () => {
                             <div className='row'>
                                 <div className='col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12'>
                                     <div className={style.imgContainer}>
-                                        <Image src={bannerphoto2} height={""} width={""} alt='' />
+                                        <Image className={style.img} src={bannerphoto2} height={""} width={""} alt='' />
                                         <div className={style.textOverlaytwo}>
                                             <h3>Source product from trusted suppliers</h3>
                                             <button>
@@ -149,7 +150,7 @@ const Banner = () => {
                                 </div>
                                 <div className='col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12'>
                                     <div className={style.imgContainer}>
-                                        <Image src={bannerphoto3} height={""} width={""} alt='' />
+                                        <Image className={style.img} src={bannerphoto3} height={""} width={""} alt='' />
                                         <div className={style.textOverlaytwo}>
                                             <h3>Searching for a
                                                 product?</h3>
@@ -162,10 +163,11 @@ const Banner = () => {
                             </div>
                         </div>
                     </div>
+                   </div>
 
                     <div>
                         <div>
-                            <h3>More Services</h3>
+                            <h3 className={style.moreServiceTag}>More Services</h3>
 
                             <div className={style.bannermoreservicediv}>
                                 <div className='row'>
@@ -184,7 +186,7 @@ const Banner = () => {
 
 
                                             <div>
-                                                <Image src={learn1} height={25} width={80} alt='' />
+                                                <Image src={learn1} height={25} width={100} alt='' />
                                             </div>
                                         </div>
                                     </div>
