@@ -48,7 +48,7 @@ const BusinessAdv = () => {
     };
     return (
         <div>
-            <div>
+            <div className={style.BusinessAdvFulldiv}>
                 <h6 className={style.sellerTag}>Business Advisory</h6>
                 <div>
                     <Slider {...settings}>
@@ -87,7 +87,7 @@ const BusinessAdv = () => {
                             <div className={style.businessAdvisorDiv}>
                                 <img className={style.businessAdviImg} src={bAp3.src} alt='' />
                                 <div>
-                                    <p className={style.businessAdvisortag}>B2B Matchmaking</p>
+                                    <p className={style.businessAdvisortag}>Digital Marketing</p>
                                     <p className={style.businessAdvisorparag}>We won't leave you hanging after your website is complete. We can take an in-depth look at your online marketing opportunities including SEO, Google Ads and inbound marketing techniques</p>
 
                                     <button className={style.businessAdvisorbuttonOne}>SEO Package</button>
@@ -102,7 +102,7 @@ const BusinessAdv = () => {
                             <div className={style.businessAdvisorDiv}>
                                 <img className={style.businessAdviImg} src={bAp4.src} alt='' />
                                 <div>
-                                    <p className={style.businessAdvisortag}>B2B Matchmaking</p>
+                                    <p className={style.businessAdvisortag}>Web Design</p>
                                     <p className={style.businessAdvisorparag}>We won't leave you hanging after your website is complete. We can take an in-depth look at your online marketing opportunities including SEO, Google Ads and inbound marketing techniques</p>
 
                                     <button className={style.businessAdvisorbuttonOne}>SEO Package</button>
@@ -131,7 +131,7 @@ const BusinessAdv = () => {
                             <div className={style.businessAdvisorDiv}>
                                 <img className={style.businessAdviImg} src={bAp3.src} alt='' />
                                 <div>
-                                    <p className={style.businessAdvisortag}>B2B Matchmaking</p>
+                                    <p className={style.businessAdvisortag}>Web Design</p>
                                     <p className={style.businessAdvisorparag}>We won't leave you hanging after your website is complete. We can take an in-depth look at your online marketing opportunities including SEO, Google Ads and inbound marketing techniques</p>
 
                                     <button className={style.businessAdvisorbuttonOne}>SEO Package</button>

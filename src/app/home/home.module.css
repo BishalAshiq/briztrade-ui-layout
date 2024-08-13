@@ -303,6 +303,11 @@ text-align: center;
   color: rgba(255, 255, 255, 1);
 }
 
+
+.BusinessAdvFulldiv{
+  /* border: solid gray; */
+  margin: 50px 0 0 0;
+}
 .businessAdvisorDiv{
  display: flex;
  justify-content: start;
@@ -311,14 +316,19 @@ text-align: center;
  background-color: white;
  padding: 20px;
  margin: 30px 0 0 0;
- width: 156px;
- height: 378px;
+ width: 203px;
+ height: 356px;
+ border-radius: 20px;
+
+}
+.businessAdviImg{
+  margin: 0 10px 0 0;
 }
 
 .businessAdvisortag{
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 14px;
   color: rgba(0, 0, 0, 1);
   width: 198px;
 }
@@ -327,8 +337,9 @@ text-align: center;
   font-weight: 400;
   font-size: 12px;
   color: rgba(0, 0, 0, 1);
-  width: 193px;
-  height: 115px;
+  width: 163px;
+  text-align: justify;
+  height: 165px;
 }
 .businessAdvisorbuttonOne{
   width: 106px;
