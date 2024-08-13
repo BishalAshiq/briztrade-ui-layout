@@ -67,7 +67,7 @@ const ElectronicsProducts = () => {
 
         <div className={style.eletronixsFulldiv}>
         <div>
-                <h3>Electronics</h3>
+                <h3 className={style.sellerTag}>Electronics</h3>
             </div>
             <div>
                 <Slider {...settings}>

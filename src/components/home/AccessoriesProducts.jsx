@@ -63,7 +63,7 @@ const AccessoriesProducts = () => {
         <div>
               <div className={style.eletronixsFulldiv}>
                 <div>
-                    <h3>Accessories</h3>
+                    <h3 className={style.sellerTag}>Accessories</h3>
                 </div>
                 <div>
                     <Slider {...settings}>

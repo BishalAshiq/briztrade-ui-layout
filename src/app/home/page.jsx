@@ -4,6 +4,7 @@ import Seller from '@/components/home/Seller';
 import ElectronicsProducts from '@/components/home/ElectronicsProducts';
 import GadgetsProduct from '@/components/home/GadgetsProduct';
 import AccessoriesProducts from '@/components/home/AccessoriesProducts';
+import BusinessAdv from '@/components/home/BusinessAdv';
 
 const HomePage = () => {
     return (
@@ -14,6 +15,7 @@ const HomePage = () => {
             <ElectronicsProducts/>
             <GadgetsProduct/>
             <AccessoriesProducts/>
+            <BusinessAdv/>
           </div>
         </div>
     );
