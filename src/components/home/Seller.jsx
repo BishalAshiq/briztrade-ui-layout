@@ -15,7 +15,7 @@ import Slider from 'react-slick';
 const Seller = () => {
 
     var settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         autoplay: true,
         speed: 2000,
