@@ -13,7 +13,7 @@ const ElectronicsProducts = () => {
             try {
                 const res = await fetch("https://dummyjson.com/products");
                 const data = await res.json();
-                // Temporarily remove the filtering to see all products
+            
                 setProducts(data.products);
             } catch (error) {
                 console.error("Error fetching products:", error);

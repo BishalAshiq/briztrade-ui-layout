@@ -2,6 +2,8 @@ import React from 'react';
 import Banner from './../../components/home/Banner';
 import Seller from '@/components/home/Seller';
 import ElectronicsProducts from '@/components/home/ElectronicsProducts';
+import GadgetsProduct from '@/components/home/GadgetsProduct';
+import AccessoriesProducts from '@/components/home/AccessoriesProducts';
 
 const HomePage = () => {
     return (
@@ -10,6 +12,8 @@ const HomePage = () => {
             <Banner/>
             <Seller/>
             <ElectronicsProducts/>
+            <GadgetsProduct/>
+            <AccessoriesProducts/>
           </div>
         </div>
     );
