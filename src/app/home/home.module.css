@@ -339,7 +339,7 @@ text-align: center;
   color: rgba(0, 0, 0, 1);
   width: 163px;
   text-align: justify;
-  height: 165px;
+  height: 159px;
 }
 .businessAdvisorbuttonOne{
   width: 106px;
@@ -368,7 +368,7 @@ font-family: "Poppins", sans-serif;
 font-weight: 400;
 font-size: 12px;
 color: rgba(0, 0, 0, 1);
-margin: 10px 0;
+margin: 5px 0;
 }
 
 .businessAdvisorbuttontwo:hover{
@@ -393,9 +393,12 @@ color: white;
   justify-content: start;
 
 }
+.ROFhr{
+  margin: 10px 0 0 0;
+}
 .RFQnumbers{
   display: flex;
-  margin: 60px 0 0 0;
+  margin: 10px 0 0 0;
   justify-content: space-evenly;
 }
 .rfqimg{
@@ -435,6 +438,7 @@ font-weight: 400;
 font-size: 12px;
 text-align: justify;
 color: rgba(0, 0, 0, 1);
+margin: 20px 0 0 0;
 }
 .moqNumbers{
   font-family: "Poppins", sans-serif;
@@ -480,7 +484,7 @@ text-align: justify;
 font-size: 13px;
 color: rgba(0, 0, 0, 1);
 /* margin: 10px 0; */
-  color: black;
+  
 }
 .customPagination {
   position: absolute;
@@ -500,4 +504,47 @@ color: rgba(0, 0, 0, 1);
 .customPagination .swiper-pagination-bullet-active {
   background-color: #ff0000; /* Active dot color */
   opacity: 1;
+}
+
+.PostBuyReqfulldiv{
+  margin: 40px 0 40px 0;
+  background: linear-gradient(93.21deg, rgba(255, 177, 105, 0.54) 27.93%, rgba(255, 255, 255, 0.54) 52.66%);
+
+  padding: 30px 30px 20px 20px;
+}
+.PostBuyReqfimgdiv{
+display: flex;
+justify-content: center;
+align-items:center;
+padding: 30px 0 0 0;
+}
+
+.postbytextinpdiv{
+  display:flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.productInputicondiv{
+  display:flex;
+  align-items:center;
+  border: .5px solid rgba(130, 130, 130, 1);
+  padding: 10px; 
+  
+}
+.productInput{
+  border:none;
+  width: 100%
+}
+.productInputbtn{
+  float:right;
+  margin: 10px 0 0 0;
+  padding: 5px 15px;
+  background: rgba(1, 85, 182, 1);
+color: white;
+font-family: "Poppins", sans-serif;
+font-weight: 500;
+text-align: justify;
+font-size: 13px;
+border-radius: 5px;
+border:none;
 }

@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Script from "next/script"; // Import the Script component
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Footer from "@/components/shared/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Navbar />
         {children}
+        <Footer/>
         
         {/* Include Popper.js */}
         <Script

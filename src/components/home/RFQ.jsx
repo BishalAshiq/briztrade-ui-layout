@@ -9,6 +9,8 @@ import 'swiper/css/effect-cards';
 import style from "../../app/home/home.module.css";
 import rfqpic from "../../assests/passport.png"
 
+
+
 const RFQ = () => {
     return (
         <div>
@@ -28,6 +30,7 @@ const RFQ = () => {
                                         <p className={style.moqparagrap}>Request for Quotation is a free and easy solution for buyers who are seeking quality quotes. By sending out a simple request, you will receive multiple quotes from qualified suppliers</p>
                                     </div>
                                 </div>
+                                <hr className={style.ROFhr}/>
                                 
                                 <div className='col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12'>
                                     <div className={style.RFQnumbers}>
@@ -49,7 +52,8 @@ const RFQ = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div></div>
+                            </div>
+                            </div>
 
                     </div>
 

@@ -6,6 +6,7 @@ import GadgetsProduct from '@/components/home/GadgetsProduct';
 import AccessoriesProducts from '@/components/home/AccessoriesProducts';
 import BusinessAdv from '@/components/home/BusinessAdv';
 import RFQ from '@/components/home/RFQ';
+import PostBuyReq from '@/components/home/PostBuyReq';
 
 const HomePage = () => {
     return (
@@ -18,6 +19,7 @@ const HomePage = () => {
             <AccessoriesProducts/>
             <BusinessAdv/>
             <RFQ/>
+            <PostBuyReq/>
           </div>
         </div>
     );
