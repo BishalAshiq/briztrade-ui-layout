@@ -351,7 +351,7 @@ font-family: "Poppins", sans-serif;
 font-weight: 400;
 font-size: 12px;
 color: rgba(0, 0, 0, 1);
-
+border: none;
 }
 .businessAdvisorbuttonOne:hover{
   background: rgba(49, 89, 251, 1);
@@ -362,7 +362,7 @@ color: rgba(0, 0, 0, 1);
   /* border: solid gray; */
   height: 29.37px;
   background: rgba(255, 181, 209, 1);
-
+border: none;
 border-radius: 10px;
 font-family: "Poppins", sans-serif;
 font-weight: 400;
@@ -374,4 +374,15 @@ margin: 10px 0;
 .businessAdvisorbuttontwo:hover{
   background: rgba(49, 89, 251, 1);
 color: white;
+}
+
+.RFQnumberofreaching{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+}
+.RFQnumbers{
+  display: flex;
+  justify-content: space-evenly;
 }

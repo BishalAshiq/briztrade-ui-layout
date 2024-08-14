@@ -5,6 +5,7 @@ import ElectronicsProducts from '@/components/home/ElectronicsProducts';
 import GadgetsProduct from '@/components/home/GadgetsProduct';
 import AccessoriesProducts from '@/components/home/AccessoriesProducts';
 import BusinessAdv from '@/components/home/BusinessAdv';
+import RFQ from '@/components/home/RFQ';
 
 const HomePage = () => {
     return (
@@ -16,6 +17,7 @@ const HomePage = () => {
             <GadgetsProduct/>
             <AccessoriesProducts/>
             <BusinessAdv/>
+            <RFQ/>
           </div>
         </div>
     );
