@@ -376,14 +376,15 @@ margin: 10px 0;
 color: white;
 }
 
-.style.vidiorfq{
-  margin: 60px 0 0 0;
+.vidiorfq{
+  margin: 40px 0 0 0;
 }
 
 .rfqfulldiv{
   background-color: white;
   margin: 40px 0 0 0 ;
-  padding: 20px;
+  padding: 40px 0 0 20px;
+  border-radius: 10px;
 }
 
 .RFQnumberofreaching{
@@ -394,18 +395,32 @@ color: white;
 }
 .RFQnumbers{
   display: flex;
+  margin: 60px 0 0 0;
   justify-content: space-evenly;
 }
 .rfqimg{
   width: 49px;
   height: 49px;
   border-radius: 100%;
+  
 }
-.rfqcardfull{
+.vidiorfqiframe{
   display:flex;
   justify-content: center;
-  align-items: center;
+  align-items:center;
+}
+.rfqtag{
+  font-family: "Poppins", sans-serif;
+font-weight: 600;
+font-size: 18px;
+color: rgba(0, 0, 0, 1);
+}
+.rfqcardfull{
+  /* display:flex;
+  justify-content: center;
+  align-items: center; */
   margin-left: 50px;
+  margin: -61px 0 0 46px;
 }
 .rfqcard{
   /* border: solid gray; */
@@ -413,6 +428,33 @@ color: white;
   width: 300px;
   height: 175px;
 padding: 20px;
+}
+.moqparagrap{
+  font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-size: 12px;
+text-align: justify;
+color: rgba(0, 0, 0, 1);
+}
+.moqNumbers{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 1);
+  
+}
+.moqNumtext{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 1);
+  
+}
+.RFQnumberofreaching{
+  text-align: justify;
+  display:flex;
+  flex-direction:column;
+  justify-content: start;
 }
 .textts{
   color: black;
