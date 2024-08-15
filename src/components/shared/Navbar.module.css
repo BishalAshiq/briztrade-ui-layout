@@ -93,32 +93,3 @@ opacity: 0px;
     text-align: center;
     margin: 40px 0 0 0;
 }
-
-.footInfofullOneDiv{
-background:white;
-}
-.footInfocard{
-    display:grid;
-    place-items: center;
-}
-
-.footInfoctext{
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 15px;
-    color: rgba(0, 0, 0, 1);
-
-}
-.footInfoctexts{
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 12px;
-    color: rgba(153, 153, 153, 1);
-width: 100px
-}
-.footInfoOneDiv{
-    display:flex;
-    justify-content: space-evenly;
-}
