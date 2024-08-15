@@ -9,6 +9,12 @@
     padding: 10px 10px 10px 30px;
     border-radius: 4px;
 }
+.topCategoryfulldiv a{
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: rgba(255, 102, 0, 1);
+}
 .topCategorydiv{
     /* background-color: white; */
     /* border: 1px solid gray; */
@@ -33,6 +39,8 @@
     font-size: 14px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+
 }
 
 /* Wrapper for the image and content */
@@ -185,7 +193,7 @@ border-radius: 10px;
 }
 .moreServiceTag{
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
   text-decoration: underline;
   margin: 65px 0 0 0;

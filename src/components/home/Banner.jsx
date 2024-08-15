@@ -117,7 +117,9 @@ const Banner = () => {
 
 
                             </div>
+                            <a href='/'>View all categories</a>
                         </div>
+                      
                     </div>
 
                 </div>

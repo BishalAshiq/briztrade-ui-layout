@@ -6,7 +6,7 @@
 
 .fistNavimg{
     width: 100%;
-    height: 120px;
+    height: 130px;
     overflow: hidden;
     /* position: fixed; */
 }
@@ -64,6 +64,7 @@ opacity: 0px;
   font-weight: 400;
   font-style: normal;
   color: white;
+  border: none;
 }
 .navSearchText{
     display: flex;
