@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['https://vercel.com/bishalashiqs-projects'], 
+        domains: ['https://briztrade-ui-layout.vercel.app/'], 
     },
 };
 
