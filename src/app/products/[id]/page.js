@@ -14,15 +14,15 @@ import Typography from '@mui/material/Typography';
 import Link from "next/link";
 
 const MUstyle = {
-     position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
-  boxShadow: 24,
-  p: 4,
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 4,
 };
 
 
@@ -32,7 +32,7 @@ const ProductDetails = () => {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
-    const [quantity, setQuantity] = useState(1); 
+    const [quantity, setQuantity] = useState(1);
 
     useEffect(() => {
         const fetchProduct = async () => {
@@ -83,14 +83,14 @@ const ProductDetails = () => {
                             <p>Brand: {product.brand}</p>
                         </div>
 
-                        <div>
-                            <div>
-                            <button onClick={decreaseQuantity}>-</button>
+                        <div className={style.inDecreasedbtndivfull}>
+                            <div className={style.inDecreasedbtndiv}>
+                                <span className={style.inDecreasedbtn} onClick={decreaseQuantity}>-</span>
                                 <span>{quantity}</span>
-                                <button onClick={increaseQuantity}>+</button>
+                                <span className={style.inDecreasedbtn} onClick={increaseQuantity}>+</span>
                             </div>
                             <div>
-                                <Button onClick={handleOpen}>Add To Cart</Button>
+                                <button className={style.AddToCartbtn} onClick={handleOpen}>Add To Cart</button>
                                 <Modal
                                     aria-labelledby="transition-modal-title"
                                     aria-describedby="transition-modal-description"
@@ -121,7 +121,7 @@ const ProductDetails = () => {
 
                 </div>
 
-                <Link href="/">Back to home</Link>
+               
             </div>
 
             {/* <h1>{product.title}</h1>

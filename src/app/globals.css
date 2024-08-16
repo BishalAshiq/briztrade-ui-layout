@@ -46,7 +46,9 @@ body{
   
 }
 
-
+a{
+  text-decoration: none;
+}
 
 
 .swiper {
@@ -101,6 +103,7 @@ body{
 .single-products{
   background: white;
   margin: 2px 0;
+  padding: 40px 0;
 }
 
 

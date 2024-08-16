@@ -6,6 +6,7 @@ import Image from 'next/image';
 import style from "./Navbar.module.css"
 // import "bootstrap/dist/css/bootstrap.min.css";
 import AOS from 'aos';
+import Link from "next/link";
 import 'aos/dist/aos.css';
 
 
@@ -111,7 +112,9 @@ const Navbar = () => {
                         <div className='col-xl-2 col-lg-2 col-md-2 col-sm-6 col-12'>
                             <div className={style.navDivsecondimg}>
                                 {/* <img className={style.navlogoimg} src={compLogo.src} alt='' /> */}
-                                <img src="/images/logo.png" alt="Logo" />
+                               <Link href="/"> 
+                               <img src="/images/logo.png" alt="Logo" />
+                               </Link>
                             </div>
                         </div>
 
