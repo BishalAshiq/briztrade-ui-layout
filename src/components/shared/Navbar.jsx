@@ -1,10 +1,12 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import addNav from "../../assests/nav.png"
 // import compLogo from "../../../public/companylogo.png"
 import Image from 'next/image';
 import style from "./Navbar.module.css"
 // import "bootstrap/dist/css/bootstrap.min.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Navbar = () => {
@@ -17,9 +19,16 @@ const Navbar = () => {
         setActiveTab(tabId);
     };
 
+    useEffect(() => {
+        AOS.init({
+            duration: 1200, // Animation duration in milliseconds
+        });
+    }, []);
+
     return (
         <div>
-            <div>
+            <div data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
                 <Image className={style.fistNavimg} src={addNav} height={""} width={""} alt='' />
             </div>
 
@@ -100,10 +109,10 @@ const Navbar = () => {
                 <div className='container thirddiv'>
                     <div className='row'>
                         <div className='col-xl-2 col-lg-2 col-md-2 col-sm-6 col-12'>
-                          <div className={style.navDivsecondimg}>
-                          {/* <img className={style.navlogoimg} src={compLogo.src} alt='' /> */}
-                          <img className={style.navlogoimg} src="/images/logo.png" alt="Logo" />
-                          </div>
+                            <div className={style.navDivsecondimg}>
+                                {/* <img className={style.navlogoimg} src={compLogo.src} alt='' /> */}
+                                <img className={style.navlogoimg} src="/images/logo.png" alt="Logo" />
+                            </div>
                         </div>
 
 
@@ -163,7 +172,7 @@ const Navbar = () => {
                             <div className={style.navRightsidediv}>
                                 <div className="dropdown">
                                     <p className='dropdown-toggle dropdownNavSecP' href='/' type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Buyer
+                                        Buyer
                                     </p>
 
                                     <ul class="dropdown-menu">
@@ -174,7 +183,7 @@ const Navbar = () => {
                                 </div>
                                 <div className="dropdown">
                                     <p className='dropdown-toggle dropdownNavSecP' href='/' type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Seller
+                                        Seller
                                     </p>
 
                                     <ul class="dropdown-menu">
@@ -185,7 +194,7 @@ const Navbar = () => {
                                 </div>
                                 <div className="dropdown">
                                     <p className='dropdown-toggle dropdownNavSecP' href='/' type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Advisory
+                                        Advisory
                                     </p>
 
                                     <ul class="dropdown-menu">
@@ -196,7 +205,7 @@ const Navbar = () => {
                                 </div>
                                 <div className="dropdown">
                                     <p className='dropdown-toggle dropdownNavSecP' href='/' type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Events
+                                        Events
                                     </p>
 
                                     <ul class="dropdown-menu">

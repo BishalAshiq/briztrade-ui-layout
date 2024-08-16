@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import style from "../../app/home/home.module.css";
+import Skeleton from '@mui/material/Skeleton';
+import Stack from '@mui/material/Stack';
 
 const AccessoriesProducts = () => {
     const [products, setProducts] = useState([]);
@@ -99,7 +101,9 @@ const AccessoriesProducts = () => {
                                 </div>
                             ))
                         ) : (
-                            <p>Loading products...</p>
+                            <Stack spacing={1}>
+                            <Skeleton variant="rounded" width={210} height={60} />
+                        </Stack>
                         )}
                     </Slider>
                 </div>

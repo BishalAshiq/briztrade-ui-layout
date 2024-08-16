@@ -1,10 +1,11 @@
-"use client"; // Ensure this is used for client components in the app directory
-
+"use client"; 
+import Skeleton from '@mui/material/Skeleton';
+import Stack from '@mui/material/Stack';
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const ProductDetails = () => {
-    const { id } = useParams(); // Get the product ID from the URL
+    const { id } = useParams(); 
     const [product, setProduct] = useState(null);
 
     useEffect(() => {
@@ -23,7 +24,9 @@ const ProductDetails = () => {
         }
     }, [id]);
 
-    if (!product) return <p>Loading...</p>;
+    if (!product) return <p>   <Stack spacing={1}>
+    <Skeleton variant="rounded" width={210} height={60} />
+</Stack></p>;
 
     return (
         <div>

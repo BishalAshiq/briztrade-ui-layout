@@ -20,7 +20,6 @@ import learn2 from "../../assests/learn2.png";
 import learn3 from "../../assests/learn3.png";
 import learn4 from "../../assests/learn4.png";
 import Image from 'next/image';
-// import topCategoriSVG from '@/assests/svg-components/topCategoriSVG';
 
 const Banner = () => {
     return (
@@ -129,7 +128,7 @@ const Banner = () => {
                    <div className={style.bannerFirstfulldiv}>
                    <div className='row'>
                         <div className='col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12'>
-                            <div className={style.imageWrapper}>
+                            <div className={style.imageWrapper} data-aos="flip-down">
                                 <Image className={style.bannerimage} src={bannerphoto} height={""} width={""} alt='' />
                                 <div className={style.textOverlay}>
                                     <h2 className={style.textOverlayh2}>Sell on Biztrade and reach millions of B2B buyer globally</h2>
@@ -140,7 +139,7 @@ const Banner = () => {
                         <div className='col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12'>
                             <div className='row'>
                                 <div className='col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12'>
-                                    <div className={style.imgContainer}>
+                                    <div className={style.imgContainer} data-aos="flip-right">
                                         <Image className={style.img} src={bannerphoto2} height={""} width={""} alt='' />
                                         <div className={style.textOverlaytwo}>
                                             <h3>Source product from trusted suppliers</h3>
@@ -151,7 +150,7 @@ const Banner = () => {
                                     </div>
                                 </div>
                                 <div className='col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12'>
-                                    <div className={style.imgContainer}>
+                                    <div className={style.imgContainer} data-aos="flip-left">
                                         <Image className={style.img} src={bannerphoto3} height={""} width={""} alt='' />
                                         <div className={style.textOverlaytwo}>
                                             <h3>Searching for a
