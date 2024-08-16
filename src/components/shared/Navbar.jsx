@@ -102,7 +102,7 @@ const Navbar = () => {
                         <div className='col-xl-2 col-lg-2 col-md-2 col-sm-6 col-12'>
                           <div className={style.navDivsecondimg}>
                           {/* <img className={style.navlogoimg} src={compLogo.src} alt='' /> */}
-                          <img className={style.navlogoimg} src="/images/companylogo.png" alt="Logo" />
+                          <img className={style.navlogoimg} src="/images/logo.png" alt="Logo" />
                           </div>
                         </div>
 
