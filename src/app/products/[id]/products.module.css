@@ -22,3 +22,8 @@
     font-weight: 400;
     border-radius: 5px;
 }
+.AddToCartbtn:hover {
+    background: linear-gradient(90deg, rgba(255,170,0,1) 0%, rgba(237,111,0,1) 35%, rgba(255,196,0,1) 100%);
+    border:none;
+    border-radius: 5px;
+  }
