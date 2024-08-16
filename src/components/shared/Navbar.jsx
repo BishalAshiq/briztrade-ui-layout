@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import addNav from "../../assests/nav.png"
-import compLogo from "../../assests/companylogo.png"
+import compLogo from "../../../public/companylogo.png"
 import Image from 'next/image';
 import style from "./Navbar.module.css"
 // import "bootstrap/dist/css/bootstrap.min.css";
