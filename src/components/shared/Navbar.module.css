@@ -65,7 +65,16 @@ opacity: 0px;
   font-style: normal;
   color: white;
   border: none;
+  border-radius: 4px;
 }
+         
+
+  .searchInputbtn:hover {
+    background: linear-gradient(90deg, rgba(255,170,0,1) 0%, rgba(237,111,0,1) 35%, rgba(255,196,0,1) 100%);
+    border:none;
+    border-radius: 4px;
+  }
+ 
 .navSearchText{
     display: flex;
     align-items: center;

@@ -142,6 +142,28 @@
 border-radius: 10px;
   cursor: pointer;
 }
+.textOverlaytwo button {
+  margin-top: 10px;
+  padding: 6px 15px;
+  background-color: transparent; /* Customize the button color */
+  color: 
+  rgba(38, 92, 129, 1);
+  border: 1px solid gray;
+border-radius: 10px;
+  cursor: pointer;
+}
+.textOverlaytwo button:hover {
+  margin-top: 10px;
+  padding: 6px 15px;
+  background-color: white; /* Customize the button color */
+  color: 
+  rgba(0, 0, 0, 1);
+  border: none;
+border-radius: 10px;
+
+  cursor: pointer;
+}
+
 
 .textOverlaytwo h3 {
   margin: 0;
