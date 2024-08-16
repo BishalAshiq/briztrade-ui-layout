@@ -101,7 +101,7 @@ const Navbar = () => {
                     <div className='row'>
                         <div className='col-xl-2 col-lg-2 col-md-2 col-sm-6 col-12'>
                           <div className={style.navDivsecondimg}>
-                          <Image className={style.navlogoimg} src={compLogo} height={""} width={""} alt='' />
+                          <img className={style.navlogoimg} src={compLogo.src} alt='' />
                           </div>
                         </div>
 
