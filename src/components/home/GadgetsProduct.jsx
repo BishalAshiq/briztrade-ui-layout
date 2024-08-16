@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import style from "../../app/home/home.module.css";
-
+import Link from "next/link";
 const GadgetsProduct = () => {
 
     const [products, setProducts] = useState([]);
@@ -71,6 +71,7 @@ const GadgetsProduct = () => {
                     <Slider {...settings}>
                         {products.length > 0 ? (
                             products.map((product) => (
+                                <Link href={`/products/${product.id}`} key={product.id}>
                                 <div key={product.id}>
                                     <div className={style.electroCard}>
                                         <div className={style.electimgdiv}>
@@ -99,6 +100,7 @@ const GadgetsProduct = () => {
                                         </div>
                                     </div>
                                 </div>
+                                </Link>
                             ))
                         ) : (
                             <p>Loading products...</p>
