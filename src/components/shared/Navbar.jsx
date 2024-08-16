@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import addNav from "../../assests/nav.png"
-import compLogo from "../../../public/companylogo.png"
+// import compLogo from "../../../public/companylogo.png"
 import Image from 'next/image';
 import style from "./Navbar.module.css"
 // import "bootstrap/dist/css/bootstrap.min.css";
@@ -101,7 +101,8 @@ const Navbar = () => {
                     <div className='row'>
                         <div className='col-xl-2 col-lg-2 col-md-2 col-sm-6 col-12'>
                           <div className={style.navDivsecondimg}>
-                          <img className={style.navlogoimg} src={compLogo.src} alt='' />
+                          {/* <img className={style.navlogoimg} src={compLogo.src} alt='' /> */}
+                          <img className={style.navlogoimg} src="/images/companylogo.png" alt="Logo" />
                           </div>
                         </div>
 
