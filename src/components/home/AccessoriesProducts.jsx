@@ -101,9 +101,10 @@ const AccessoriesProducts = () => {
                                 </div>
                             ))
                         ) : (
-                            <Stack spacing={1}>
+                            <div>   <Stack spacing={1}>
                             <Skeleton variant="rounded" width={210} height={60} />
-                        </Stack>
+                        </Stack></div>
+                        
                         )}
                     </Slider>
                 </div>

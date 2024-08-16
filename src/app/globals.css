@@ -97,7 +97,11 @@ body{
 
 
 
-
+/* Products  */
+.single-products{
+  background: white;
+  margin: 2px 0;
+}
 
 
 

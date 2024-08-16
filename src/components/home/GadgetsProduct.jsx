@@ -107,9 +107,10 @@ const GadgetsProduct = () => {
                                 </Link>
                             ))
                         ) : (
-                            <Stack spacing={1}>
-                                <Skeleton variant="rounded" width={210} height={60} />
-                            </Stack>
+                            <div>   <Stack spacing={1}>
+                            <Skeleton variant="rounded" width={210} height={60} />
+                        </Stack></div>
+                        
                         )}
                     </Slider>
                 </div>
